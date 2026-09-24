@@ -91,7 +91,7 @@ const expectations = [
     },
     xml: `
       <x14:cfRule type="expression" priority="2" id="{E07C92B2-D318-474C-A432-832EE9407711}">
-        <xm:f>'Reporting Characteristics'!$E8=TRUE()</xm:f>
+        <xm:f>$A1=1</xm:f>
         <x14:dxf>
           <fill>
             <patternFill>
@@ -105,7 +105,7 @@ const expectations = [
       type: 'expression',
       priority: 2,
       x14Id: '{E07C92B2-D318-474C-A432-832EE9407711}',
-      formulae: ["'Reporting Characteristics'!$E8=TRUE()"],
+      formulae: ['$A1=1'],
       style: {
         alignment: null,
         border: null,
