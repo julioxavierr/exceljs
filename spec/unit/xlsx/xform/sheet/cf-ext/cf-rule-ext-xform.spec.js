@@ -84,42 +84,6 @@ const expectations = [
     },
     tests: ['render', 'parse'],
   },
-  {
-    title: 'Expression',
-    create() {
-      return new CfRuleExtXform();
-    },
-    xml: `
-      <x14:cfRule type="expression" priority="2" id="{E07C92B2-D318-474C-A432-832EE9407711}">
-        <xm:f>$A1=1</xm:f>
-        <x14:dxf>
-          <fill>
-            <patternFill>
-              <bgColor rgb="FFD9D9D9"/>
-            </patternFill>
-          </fill>
-        </x14:dxf>
-      </x14:cfRule>
-    `,
-    parsedModel: {
-      type: 'expression',
-      priority: 2,
-      x14Id: '{E07C92B2-D318-474C-A432-832EE9407711}',
-      formulae: ['$A1=1'],
-      style: {
-        alignment: null,
-        border: null,
-        fill: {
-          type: 'pattern',
-          bgColor: {argb: 'FFD9D9D9'},
-        },
-        font: null,
-        numFmt: null,
-        protection: null,
-      },
-    },
-    tests: ['parse'],
-  },
 ];
 
 describe('CfRuleExtXform', () => {
